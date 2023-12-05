@@ -1,20 +1,14 @@
 package main
 
-import "fmt"
-
-func main() {
-    name := "Go Developers"
-    fmt.Println("Azure for", name)
-}
-
-/*
 import (
 	"net/http"
-	"image-preview/server"
+
+	"github.com/pinguini/image-preview/server"
 )
 
 func main() {
-	http.HandleFunc("/", server.ProxyHandler)
+	http.HandleFunc("/", server.DefaultHandler)
+	http.HandleFunc("/fill/", server.FillHandler)
+
 	http.ListenAndServe(":8080", nil)
 }
-*/

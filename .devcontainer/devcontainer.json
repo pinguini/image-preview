@@ -13,7 +13,7 @@
 // собирается контейнер и относительно этой директории будут отрабатывать
 // все пути в Dockerfile. В примере - это папка проекта First project.
 // Соответственно, если у вас в Dockerfile написано "COPY app/requirements.txt ."
-// то это значит, что при сборке каталог app будет искаться относительно папки
+// то это значит, что при сборке каталог app будет искаться относительно папки 
 // First project. Эта возможность позволяет вам очень гибко собирать ваши образы.
     },
     "remoteUser": "root",
@@ -40,8 +40,16 @@
             "extensions": [
                 // тут мы задаем список расширений VS Code, которые хотим увидеть при разработке в контейнере.
                 // Тут приведен мой - замените на свой.
+                        "streetsidesoftware.code-spell-checker",
+                        "VisualStudioExptTeam.vscodeintellicode",
+                        "VisualStudioExptTeam.intellicode-api-usage-examples",
                         "golang.go",
-                        "GitHub.copilot"
+                        // "GitHub.copilot",
+                        "Codeium.codeium",
+                        "ms-azuretools.vscode-docker",
+                        "MS-CEINTL.vscode-language-pack-ru",
+                        "streetsidesoftware.code-spell-checker",
+                        "streetsidesoftware.code-spell-checker-russian"
                     ]
         }
     },
